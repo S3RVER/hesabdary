@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegisterLoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::middleware(['guest'])->group(function (){
+    Route::get('login', [RegisterLoginController::class, 'ViewLogin'])->name('login');
+    Route::post('login', [RegisterLoginController::class, 'login'])->name('login');
+
+    Route::get('register', [RegisterLoginController::class, 'ViewRegister'])->name('register');
+    Route::post('register', [RegisterLoginController::class, 'Register'])->name('register');
+});
+
+Route::middleware(['auth'])->group(function (){
+    Route::resource('users', \App\Http\Controllers\UserController::class);
+    Route::resource('colors', \App\Http\Controllers\ColorController::class);
+    Route::resource('brands', \App\Http\Controllers\BrandController::class);
+    Route::resource('categories', \App\Http\Controllers\CategoryController::class);
 });
