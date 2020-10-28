@@ -26,10 +26,12 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body>
+
 <div class="page">
     <!-- Main Navbar-->
     <header class="header">
         <nav class="navbar">
+
             <!-- Search Box-->
             <div class="search-box">
                 <button class="dismiss"><i class="icon-close"></i></button>
