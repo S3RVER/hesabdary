@@ -1,5 +1,5 @@
 @extends('layouts.app', [
-    'title' => 'Categories list'
+    'title' => 'Edit Category'
 ])
 
 @section('content')
@@ -17,10 +17,10 @@
                             </div>
                         </div>
                         <div class="card-header d-flex align-items-center">
-                            <h3 class="h4">Basic Form</h3>
+                            <h3 class="h4">Edit Category</h3>
                         </div>
                         <div class="card-body">
-                            <p>Create New Category</p>
+                            <p>Edit Category</p>
                             <form action="{{ route('categories.update', $category->id) }}" method="post">
                                 @csrf
                                 @method('put')

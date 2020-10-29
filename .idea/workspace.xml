@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4723ebbb-702f-4b12-9d17-db2bb5093274" name="Default Changelist" comment="Color fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ColorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ColorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Color.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Color.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/colors/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colors/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/colors/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colors/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/colors/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colors/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +215,7 @@
       <workItem from="1603890820507" duration="65000" />
       <workItem from="1603905670771" duration="311000" />
       <workItem from="1603906003316" duration="2423000" />
-      <workItem from="1603963418801" duration="6159000" />
+      <workItem from="1603963418801" duration="6608000" />
     </task>
     <task id="LOCAL-00001" summary="relations">
       <created>1603889824711</created>
@@ -285,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603968614815</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Color fixed">
+      <created>1603969658062</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603969658062</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +316,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Color fixed" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="263" y="99" key="IDE.errors.dialog" timestamp="1603969892452">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="99" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1603969892452" />
     <state x="129" y="55" key="MergeDialog" timestamp="1603968529668">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -334,10 +340,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1603969425639" />
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603968622141">
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603969697579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603968622141" />
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603969697579" />
     <state x="448" y="0" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603968525451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
