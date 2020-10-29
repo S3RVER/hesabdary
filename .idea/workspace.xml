@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4723ebbb-702f-4b12-9d17-db2bb5093274" name="Default Changelist" comment="category">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ColorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ColorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+    <list default="true" id="4723ebbb-702f-4b12-9d17-db2bb5093274" name="Default Changelist" comment="Category fixed">
+      <change afterPath="$PROJECT_DIR$/resources/views/colors/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/colors/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/colors/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -173,7 +179,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/categories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -186,6 +192,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alireza\Desktop\project\hesabdary\resources\views" />
       <recent name="C:\Users\Alireza\Desktop\project\hesabdary\resources\views\categories" />
       <recent name="C:\Users\Alireza\Desktop\project\hesabdary\resources\views\layouts" />
     </key>
@@ -210,7 +217,7 @@
       <workItem from="1603890820507" duration="65000" />
       <workItem from="1603905670771" duration="311000" />
       <workItem from="1603906003316" duration="2423000" />
-      <workItem from="1603963418801" duration="4560000" />
+      <workItem from="1603963418801" duration="5103000" />
     </task>
     <task id="LOCAL-00001" summary="relations">
       <created>1603889824711</created>
@@ -261,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603965588812</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Category fixed">
+      <created>1603968036552</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603968036552</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,13 +299,14 @@
     <MESSAGE value="reration" />
     <MESSAGE value="controllers" />
     <MESSAGE value="qaleb" />
-    <option name="LAST_COMMIT_MESSAGE" value="qaleb" />
+    <MESSAGE value="Category fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category fixed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="129" y="55" key="MergeDialog" timestamp="1603965675653">
+    <state x="129" y="55" key="MergeDialog" timestamp="1603968529668">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="129" y="55" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1603965675653" />
+    <state x="129" y="55" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1603968529668" />
     <state x="313" y="118" key="MultipleFileMergeDialog" timestamp="1603965675660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -304,17 +319,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603886067273" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1603967992625">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603968545980">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1603967992625" />
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603965590573">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1603968545980" />
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603968038496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603965590573" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603965715377">
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603968038496" />
+    <state x="448" y="0" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603968525451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603965715377" />
+    <state x="448" y="0" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1603968525451" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603968361583">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603968361583" />
   </component>
 </project>
