@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4723ebbb-702f-4b12-9d17-db2bb5093274" name="Default Changelist" comment="qaleb">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/categories/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +179,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/categories" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -190,6 +192,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alireza\Desktop\project\hesabdary\resources\views\categories" />
       <recent name="C:\Users\Alireza\Desktop\project\hesabdary\resources\views\layouts" />
     </key>
   </component>
@@ -213,7 +216,7 @@
       <workItem from="1603890820507" duration="65000" />
       <workItem from="1603905670771" duration="311000" />
       <workItem from="1603906003316" duration="2423000" />
-      <workItem from="1603963418801" duration="2130000" />
+      <workItem from="1603963418801" duration="4560000" />
     </task>
     <task id="LOCAL-00001" summary="relations">
       <created>1603889824711</created>
@@ -257,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603963735339</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="qaleb">
+      <created>1603965588812</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603965588812</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,25 +294,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="qaleb" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="517" y="283" key="NewPhpFileDialog" timestamp="1603964356344">
+    <state x="129" y="55" key="MergeDialog" timestamp="1603965675653">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="283" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603964356344" />
+    <state x="129" y="55" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1603965675653" />
+    <state x="313" y="118" key="MultipleFileMergeDialog" timestamp="1603965675660">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="313" y="118" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1603965675660" />
+    <state x="517" y="283" key="NewPhpFileDialog" timestamp="1603967638570">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="283" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603967638570" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1603886067273">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603886067273" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1603965496056">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603967992625">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1603965496056" />
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603963737723">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1603967992625" />
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603965590573">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603963737723" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603963908544">
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603965590573" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603965715377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603963908544" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603965715377" />
   </component>
 </project>
