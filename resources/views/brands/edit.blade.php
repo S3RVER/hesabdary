@@ -1,0 +1,42 @@
+@extends('layouts.app', [
+    'title' => 'Categories list'
+])
+
+@section('content')
+    <section class="forms">
+        <div class="container-fluid">
+            @include('layouts.messages')
+            <div class="row">
+                <!-- Basic Form-->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-close">
+                            <div class="dropdown">
+                                <button type="button" id="closeCard1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                                <div aria-labelledby="closeCard1" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
+                            </div>
+                        </div>
+                        <div class="card-header d-flex align-items-center">
+                            <h3 class="h4">Basic Form</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Create New Category</p>
+                            <form action="{{ route('categories.update', $category->id) }}" method="post">
+                                @csrf
+                                @method('put')
+                                <div class="form-group">
+                                    <label class="form-control-label">Title</label>
+                                    <input type="text" value="{{ $category->title }}" name="title" placeholder="Title Category" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Send" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+@endsection
