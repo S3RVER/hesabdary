@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use Illuminate\Http\Request;
+use function Symfony\Component\String\b;
 
 class BrandController extends Controller
 {
@@ -13,7 +15,8 @@ class BrandController extends Controller
      */
     public function index()
     {
-        //
+        $brands = Brand::all();
+        return view('brands.index', compact('brands'));
     }
 
     /**
@@ -23,7 +26,7 @@ class BrandController extends Controller
      */
     public function create()
     {
-        //
+        return view('brands.create');
     }
 
     /**
@@ -34,7 +37,12 @@ class BrandController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+        ]);
+        Brand::create([
+            'title' => $request['title'],
+        ]);
     }
 
     /**
@@ -43,10 +51,7 @@ class BrandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -56,7 +61,8 @@ class BrandController extends Controller
      */
     public function edit($id)
     {
-        //
+        $brand = Brand::find($id);
+        return view('brands.edit', compact('brand'));
     }
 
     /**
@@ -68,7 +74,9 @@ class BrandController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = Brand::find($id);
+        $data->update($request->all());
+        return redirect('brands.index');
     }
 
     /**
@@ -79,6 +87,8 @@ class BrandController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Brand::find($id);
+        $data->destroy();
+        return back();
     }
 }

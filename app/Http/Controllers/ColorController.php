@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Color;
 use Illuminate\Http\Request;
 
 class ColorController extends Controller
@@ -13,7 +14,8 @@ class ColorController extends Controller
      */
     public function index()
     {
-        //
+        $colors = Color::all();
+        return view('colors.index', compact('colors'));
     }
 
     /**
@@ -23,7 +25,7 @@ class ColorController extends Controller
      */
     public function create()
     {
-        //
+        return view('colors.create');
     }
 
     /**
@@ -34,7 +36,14 @@ class ColorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'color' => 'required',
+        ]);
+        Color::create([
+            'name' => $request['name'],
+            'color' => $request['color'],
+        ]);
     }
 
     /**
@@ -43,10 +52,7 @@ class ColorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -56,7 +62,8 @@ class ColorController extends Controller
      */
     public function edit($id)
     {
-        //
+        $color = Color::findOrfail($id);
+        return view('colors.edit', compact('color'));
     }
 
     /**
@@ -68,7 +75,9 @@ class ColorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = Color::findOrfail($id);
+        $data->update($request->all());
+        return redirect('colors.index');
     }
 
     /**
@@ -79,6 +88,8 @@ class ColorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Color::findOrfail($id);
+        $data->destroy();
+        return back();
     }
 }
