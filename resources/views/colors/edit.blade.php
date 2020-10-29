@@ -1,5 +1,5 @@
 @extends('layouts.app', [
-    'title' => 'Categories list'
+    'title' => 'Edit Color'
 ])
 
 @section('content')
@@ -17,16 +17,20 @@
                             </div>
                         </div>
                         <div class="card-header d-flex align-items-center">
-                            <h3 class="h4">Basic Form</h3>
+                            <h3 class="h4">Edit Color</h3>
                         </div>
                         <div class="card-body">
-                            <p>Create New Category</p>
-                            <form action="{{ route('categories.update', $category->id) }}" method="post">
+                            <p>Edit Color</p>
+                            <form action="{{ route('colors.update', $color->id) }}" method="post">
                                 @csrf
                                 @method('put')
                                 <div class="form-group">
-                                    <label class="form-control-label">Title</label>
-                                    <input type="text" value="{{ $category->title }}" name="title" placeholder="Title Category" class="form-control">
+                                    <label class="form-control-label">Name</label>
+                                    <input type="text" value="{{ $color->name }}" name="name" placeholder="Name Color" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Color</label>
+                                    <input type="text" value="{{ $color->color }}" name="color" placeholder="Color Color" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" value="Send" class="btn btn-primary">

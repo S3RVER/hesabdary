@@ -19,6 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4723ebbb-702f-4b12-9d17-db2bb5093274" name="Default Changelist" comment="Category fixed">
       <change afterPath="$PROJECT_DIR$/resources/views/brands/create.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" afterDir="false" />
@@ -26,6 +27,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
+=======
+    <list default="true" id="4723ebbb-702f-4b12-9d17-db2bb5093274" name="Default Changelist" comment="Color fixed">
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/edit.blade.php" afterDir="false" />
+>>>>>>> 3b47973dc800a667052b6c7824ce7f5b256a538d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +226,7 @@
       <workItem from="1603890820507" duration="65000" />
       <workItem from="1603905670771" duration="311000" />
       <workItem from="1603906003316" duration="2423000" />
-      <workItem from="1603963418801" duration="5103000" />
+      <workItem from="1603963418801" duration="6608000" />
     </task>
     <task id="LOCAL-00001" summary="relations">
       <created>1603889824711</created>
@@ -278,7 +284,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603968036552</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Color fixed">
+      <created>1603968614815</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603968614815</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Color fixed">
+      <created>1603969658062</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603969658062</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,9 +323,14 @@
     <MESSAGE value="controllers" />
     <MESSAGE value="qaleb" />
     <MESSAGE value="Category fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category fixed" />
+    <MESSAGE value="Color fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Color fixed" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="263" y="99" key="IDE.errors.dialog" timestamp="1603969892452">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="99" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1603969892452" />
     <state x="129" y="55" key="MergeDialog" timestamp="1603968529668">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -322,21 +347,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603886067273" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1603968545980">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603969425639">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1603968545980" />
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603968038496">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1603969425639" />
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603969697579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603968038496" />
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603969697579" />
     <state x="448" y="0" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603968525451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="448" y="0" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1603968525451" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603968361583">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603969606156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603968361583" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603969606156" />
   </component>
 </project>
