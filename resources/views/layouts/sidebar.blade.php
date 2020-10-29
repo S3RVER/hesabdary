@@ -11,5 +11,6 @@
     <ul class="list-unstyled">
         <li class="active"><a href="{{ route('home') }}"> <i class="icon-home"></i>Home </a></li>
         <li><a href="{{ route('categories.index') }}"> <i class="icon-grid"></i>Categories </a></li>
+        <li><a href="{{ route('colors.index') }}"> <i class="icon-grid"></i>Colors </a></li>
     </ul>
 </nav>

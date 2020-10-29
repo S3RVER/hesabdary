@@ -26,7 +26,8 @@
                                     <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Title</th>
+                                        <th>Name</th>
+                                        <th>Color</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>
@@ -35,12 +36,13 @@
                                     @foreach($colors as $color)
                                         <tr>
                                             <th scope="row">{{ $color->id }}</th>
-                                            <td>{{$color->title}}</td>
+                                            <td>{{$color->name}}</td>
+                                            <td>{{$color->color}}</td>
                                             <td>
-                                                <a href="{{ route('categories.edit', $color->id) }}" class="btn btn-info">Edit</a>
+                                                <a href="{{ route('colors.edit', $color->id) }}" class="btn btn-info">Edit</a>
                                             </td>
                                             <td>
-                                                <form onclick="this.submit()" action="{{ route('categories.destroy', $color->id) }}" method="post" class="btn btn-danger">
+                                                <form onclick="this.submit()" action="{{ route('colors.destroy', $color->id) }}" method="post" class="btn btn-danger">
                                                     @csrf
                                                     @method('delete')
                                                     Delete
