@@ -14,7 +14,7 @@ class ColorController extends Controller
      */
     public function index()
     {
-        $colors = Color::all();
+        $colors = Color::orderByDesc('id')->get();
         return view('colors.index', compact('colors'));
     }
 
