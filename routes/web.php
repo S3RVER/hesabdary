@@ -33,4 +33,7 @@ Route::middleware(['guest'])->group(function (){
     Route::resource('colors', \App\Http\Controllers\ColorController::class);
     Route::resource('brands', \App\Http\Controllers\BrandController::class);
     Route::resource('categories', \App\Http\Controllers\CategoryController::class);
+    Route::resource('products', \App\Http\Controllers\ProductController::class);
+    Route::get('products/increment/{id}', [\App\Http\Controllers\ProductController::class,'increment'])->name('products.increment');
+    Route::get('products/decrement/{id}', [\App\Http\Controllers\ProductController::class,'decrement'])->name('products.decrement');
 //});

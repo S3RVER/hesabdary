@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class ProductCount extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'product_id',
+        'count',
+    ];
 
     public function product()
     {
