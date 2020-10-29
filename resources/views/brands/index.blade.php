@@ -1,5 +1,5 @@
 @extends('layouts.app', [
-    'title' => 'Colors list'
+    'title' => 'Brands list'
 ])
 
 @section('content')
@@ -8,7 +8,7 @@
             @include('layouts.messages')
             <div class="row">
                 <div class="col-lg-12">
-                    <a href="{{ route('colors.create') }}" class="btn btn-success mb-2">Create Color</a>
+                    <a href="{{ route('brands.create') }}" class="btn btn-success mb-2">Create Brand</a>
 
                     <div class="card">
                         <div class="card-close">
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="card-header d-flex align-items-center">
-                            <h3 class="h4">Colors List</h3>
+                            <h3 class="h4">Brands List</h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -32,15 +32,15 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($colors as $color)
+                                    @foreach($brands as $brand)
                                         <tr>
-                                            <th scope="row">{{ $color->id }}</th>
-                                            <td>{{$color->title}}</td>
+                                            <th scope="row">{{ $brand->id }}</th>
+                                            <td>{{$brand->title}}</td>
                                             <td>
-                                                <a href="{{ route('categories.edit', $color->id) }}" class="btn btn-info">Edit</a>
+                                                <a href="{{ route('brands.edit', $brand->id) }}" class="btn btn-info">Edit</a>
                                             </td>
                                             <td>
-                                                <form onclick="this.submit()" action="{{ route('categories.destroy', $color->id) }}" method="post" class="btn btn-danger">
+                                                <form onclick="this.submit()" action="{{ route('brands.destroy', $brand->id) }}" method="post" class="btn btn-danger">
                                                     @csrf
                                                     @method('delete')
                                                     Delete

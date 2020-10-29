@@ -41,8 +41,9 @@ class BrandController extends Controller
             'title' => 'required',
         ]);
         Brand::create([
-            'title' => $request['title'],
+            'title' => $request->title,
         ]);
+        return redirect(route('brands.index'))->with(['success' => 'Created Brand']);
     }
 
     /**
@@ -76,7 +77,7 @@ class BrandController extends Controller
     {
         $data = Brand::find($id);
         $data->update($request->all());
-        return redirect('brands.index');
+        return redirect(route('brands.index'))->with(['success' => 'Updated Brand']);
     }
 
     /**
@@ -89,6 +90,6 @@ class BrandController extends Controller
     {
         $data = Brand::find($id);
         $data->destroy();
-        return back();
+        return back()->with(['success' => 'Deleted Brand']);
     }
 }
