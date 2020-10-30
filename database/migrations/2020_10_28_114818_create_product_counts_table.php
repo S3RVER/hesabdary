@@ -14,7 +14,8 @@ class CreateProductCountsTable extends Migration
     public function up()
     {
         Schema::create('product_counts', function (Blueprint $table) {
-            $table->foreignId('product_id')->constrained();
+            $table->foreignId('product_id')->constrained('products', 'id')->onDelete('cascade')
+                                                                                                ->onUpdate('cascade');
             $table->unsignedBigInteger('count');
             $table->timestamps();
         });

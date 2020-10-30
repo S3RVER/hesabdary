@@ -88,8 +88,8 @@ class BrandController extends Controller
      */
     public function destroy($id)
     {
-        $data = Brand::find($id);
-        $data->destroy();
+        $data = Brand::findOrfail($id);
+        $data->delete();
         return back()->with(['success' => 'Deleted Brand']);
     }
 }

@@ -17,10 +17,10 @@ class CreateProductsTable extends Migration
                     $table->id();
                     $table->string('title');
                     $table->string('code');
-                    $table->foreignId('color_id')->constrained();
-                    $table->foreignId('category_id')->constrained();
-                    $table->foreignId('brand_id')->constrained();
-                    $table->foreignId('user_id')->constrained();
+                    $table->foreignId('color_id')->constrained('colors', 'id');
+                    $table->foreignId('category_id')->constrained('categories', 'id');
+                    $table->foreignId('brand_id')->constrained('brands', 'id');
+                    $table->foreignId('user_id')->constrained('users', 'id');
                     $table->timestamps();
         });
     }

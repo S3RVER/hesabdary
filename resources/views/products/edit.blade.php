@@ -21,17 +21,50 @@
                         </div>
                         <div class="card-body">
                             <p>Edit Color</p>
-                            <form action="{{ route('colors.update', $color->id) }}" method="post">
+                            <form action="{{ route('products.update',[$product->id]) }}" method="post">
                                 @csrf
-                                @method('put')
+                                @method('PUT')
                                 <div class="form-group">
-                                    <label class="form-control-label">Name</label>
-                                    <input type="text" value="{{ $color->name }}" name="name" placeholder="Name Color" class="form-control">
+                                    <label class="form-control-label">Title</label>
+                                    <input type="text" name="title" placeholder="Title" value="{{$product->title}}" class="form-control">
                                 </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Code</label>
+                                    <input type="text" name="code" placeholder="Code" value="{{$product->code}}" class="form-control">
+                                </div>
+
                                 <div class="form-group">
                                     <label class="form-control-label">Color</label>
-                                    <input type="text" value="{{ $color->color }}" name="color" placeholder="Color Color" class="form-control">
+                                    <select  name="color" class="form-control">
+                                        @foreach($colors as $color)
+                                            <option value="{{$color->id}}"
+                                            @if($color->id == $product->color_id)  selected   @endif>
+                                                {{$color->name}}
+                                            </option>
+                                        @endforeach
+                                    </select>
                                 </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Category</label>
+                                    <select  name="category" class="form-control">
+                                        @foreach($categories as $category)
+                                            <option value="{{$category->id}}" @if($category->id == $product->category_id)  selected  @endif>
+                                                {{$category->title}}
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Brand</label>
+                                    <select  name="brand" class="form-control">
+                                        @foreach($brands as $brand)
+                                            <option value="{{$brand->id}}" @if($brand->id == $product->brand_id)  selected   @endif>
+                                                {{$brand->title}}
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
                                 <div class="form-group">
                                     <input type="submit" value="Send" class="btn btn-primary">
                                 </div>

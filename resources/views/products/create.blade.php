@@ -59,7 +59,7 @@
                                         @endforeach
                                     </select>
                                 </div>
-
+                                <input type="hidden" name="user_id" value="{{Auth::id()}}">
                                 <div class="form-group">
                                     <input type="submit" value="Send" class="btn btn-primary">
                                 </div>

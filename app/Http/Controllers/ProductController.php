@@ -20,7 +20,7 @@ class ProductController extends Controller
     {
 
 
-        $products = Product::all();
+        $products = Product::orderBy('id', 'DESC')->get();
         return view('products.index', compact('products'));
     }
 
@@ -41,7 +41,7 @@ class ProductController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function store(Request $request )
     {
@@ -49,7 +49,7 @@ class ProductController extends Controller
         $request->validate([
             'title' => 'required',
             'code' => 'required',
-            'count' => 'required',
+            'count' => 'required|integer',
             'color.*' => 'required',
             'category.*' => 'required',
             'brand.*' => 'required',
@@ -60,7 +60,7 @@ class ProductController extends Controller
             'color_id' => $request->color,
             'brand_id' => $request->brand,
             'category_id' => $request->category,
-            'user_id' => 1,
+            'user_id' => $request->user_id,
         ]);
 
 
@@ -72,6 +72,7 @@ class ProductController extends Controller
 //        $product->productcount()->create([
 //            'count' => $request->count,
 //        ]);
+        return redirect(route('products.index'))->with(['success' => 'Created successfull']);
 
     }
 
@@ -91,7 +92,11 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $colors = Color::all();
+        $categories = Category::all();
+        $brands = Brand::all();
+        $product = Product::findOrfail($id);
+        return view('products.edit',compact('product', 'colors', 'categories', 'brands'));
     }
 
     /**
@@ -103,18 +108,28 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $data=Product::findOrfail($id);
+        $data->title = $request->title;
+        $data->code = $request->code;
+        $data->color_id = $request->color;
+        $data->category_id = $request->category;
+        $data->brand_id = $request->brand;
+        $data->update();
+        return redirect(route('products.index'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function destroy($id)
     {
-        //
+        $data = Product::findOrfail($id);
+        $data->delete();
+        return redirect(route('products.index'))->with(['success' => 'deleted successfull']);
     }
 
     public function increment($id)
